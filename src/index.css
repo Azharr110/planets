@@ -1,13 +1,56 @@
-.body {
+html,
+body {
   background-color: #020c1b;
-
-  width: 100vw;
-  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
-  padding: 0;
+  height: 100%;
 }
 
 .My_planets {
-  color: blue;
+  color: white;
   text-align: center;
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.mercury {
+  height: 90px;
+  width: 70px;
+}
+.venus {
+  height: 110px;
+  width: 90px;
+}
+.earth {
+  height: 120px;
+  width: 90px;
+}
+.mars {
+  height: 90px;
+  width: 60px;
+}
+.jupiter {
+  height: 200px;
+  width: 150px;
+}
+
+.saturn {
+  height: 180px;
+  width: 140px;
+}
+.uranus {
+  height: 150px;
+  width: 120px;
+}
+.neptune {
+  height: 140px;
+  width: 115px;
+}
+
+.sun {
+  height: 100px;
+  width: 70px;
 }
