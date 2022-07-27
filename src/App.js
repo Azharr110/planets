@@ -1,5 +1,5 @@
 import earth from "./assets/images/icon-earth.png";
-import globe from "./assets/images/icon-globe.png";
+import sun from "./assets/images/icon-sun.png";
 import jupiter from "./assets/images/icon-jupiter.png";
 import mars from "./assets/images/icon-mars.png";
 import mercury from "./assets/images/icon-mercury.png";
@@ -9,6 +9,12 @@ import uranus from "./assets/images/icon-uranus.png";
 import venus from "./assets/images/icon-venus.png";
 function App() {
   let planets = [
+    {
+      id: 9,
+      title: "Sun",
+      image: sun,
+      divClass: "sun",
+    },
     {
       id: 6,
       title: "Mercury",
@@ -58,12 +64,6 @@ function App() {
       title: "Neptune",
       image: neptune,
       divClass: "neptune",
-    },
-    {
-      id: 9,
-      title: "Sun",
-      image: globe,
-      divClass: "sun",
     },
   ];
   return (

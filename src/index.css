@@ -9,10 +9,11 @@ body {
 }
 
 .My_planets {
+  margin-top: 200px;
   color: white;
   text-align: center;
   display: flex;
-
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -51,6 +52,6 @@ body {
 }
 
 .sun {
-  height: 100px;
-  width: 70px;
+  height: 400px;
+  width: 320px;
 }
