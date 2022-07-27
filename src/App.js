@@ -10,12 +10,6 @@ import venus from "./assets/images/icon-venus.png";
 function App() {
   let planets = [
     {
-      id: 9,
-      title: "Sun",
-      image: sun,
-      divClass: "sun",
-    },
-    {
       id: 6,
       title: "Mercury",
       image: mercury,
@@ -68,13 +62,18 @@ function App() {
   ];
   return (
     <div className="body">
+      <div>
+        <a>
+          <img className={`planet sun `} src={sun}></img>
+        </a>
+      </div>
       <div className="My_planets">
         {planets.map((name) => (
           <div>
             {" "}
             <h2> {name.title}</h2>
             <a>
-              <img className={name.divClass} src={name.image}></img>
+              <img className={`planet ${name.divClass}`} src={name.image}></img>
             </a>
           </div>
         ))}
