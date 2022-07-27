@@ -10,47 +10,73 @@ import venus from "./assets/images/icon-venus.png";
 function App() {
   let planets = [
     {
-      title: "Earth",
-      image: { earth },
+      id: 6,
+      title: "Mercury",
+      image: mercury,
+      divClass: " mercury",
     },
     {
-      title: "Mars",
-      image: { mars },
-    },
-    {
-      title: "Jupiter",
-      image: { jupiter },
-    },
-    {
+      id: 4,
       title: "Venus",
-      image: { venus },
+      image: venus,
+      divClass: "venus",
     },
     {
+      id: 1,
+      title: "Earth",
+      image: earth,
+      divClass: "earth",
+    },
+    {
+      id: 2,
+      title: "Mars",
+      image: mars,
+      divClass: "mars",
+    },
+    {
+      id: 3,
+      title: "Jupiter",
+      image: jupiter,
+      divClass: "jupiter",
+    },
+
+    {
+      id: 5,
       title: "Saturn",
-      image: { saturn },
+      image: saturn,
+      divClass: "saturn",
     },
+
     {
-      title: "SMAC",
-      image: { mercury },
-    },
-    {
-      title: "Neptune",
-      image: { neptune },
-    },
-    {
+      id: 8,
       title: "Uranus",
-      image: { uranus },
+      image: uranus,
+      divClass: "uranus",
     },
     {
+      id: 7,
+      title: "Neptune",
+      image: neptune,
+      divClass: "neptune",
+    },
+    {
+      id: 9,
       title: "Sun",
-      image: { globe },
+      image: globe,
+      divClass: "sun",
     },
   ];
   return (
     <div className="body">
       <div className="My_planets">
         {planets.map((name) => (
-          <h2>{name}</h2>
+          <div>
+            {" "}
+            <h2> {name.title}</h2>
+            <a>
+              <img className={name.divClass} src={name.image}></img>
+            </a>
+          </div>
         ))}
       </div>{" "}
     </div>
