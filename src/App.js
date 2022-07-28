@@ -77,14 +77,10 @@ function App() {
       </div>
       <div className="My_planets">
         {planets.map((name) => (
-          <div>
-            {" "}
-            <h2 className={` ${name.divTextClass}`}> {name.title}</h2>
+          <div className={`${name.divClass}`}>
+            <h2> {name.title}</h2>
             <a>
-              <img
-                className={`floating planet ${name.divClass}`}
-                src={name.image}
-              ></img>
+              <img className={`floating planet `} src={name.image}></img>
             </a>
           </div>
         ))}

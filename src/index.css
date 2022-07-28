@@ -26,43 +26,71 @@ body {
 
   margin-left: 100px;
 }
-
 .mercury {
-  height: 50px;
-  width: 35px;
+  padding-top: 50px;
 }
 .venus {
-  height: 70px;
-  width: 45px;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 .earth {
-  height: 75px;
-  width: 55px;
+  padding-top: 30px;
 }
 .mars {
-  height: 50px;
-  width: 35px;
+  padding-top: 200px;
 }
 .jupiter {
-  height: 130px;
-  width: 90px;
   padding-bottom: 9px;
 }
-
 .saturn {
-  height: 105px;
-  width: 80px;
   padding-bottom: 300px;
 }
 .uranus {
-  height: 110px;
-  width: 85px;
+  padding-top: 50px;
 }
 .neptune {
+  padding-bottom: 200px;
+}
+
+.mercury img {
+  height: 50px;
+  width: 35px;
+  animation-duration: 3s;
+}
+.venus img {
+  height: 70px;
+  width: 45px;
+  animation-duration: 4s;
+}
+.earth img {
+  height: 75px;
+  width: 55px;
+  animation-duration: 4s;
+}
+.mars img {
+  height: 50px;
+  width: 35px;
+  animation-duration: 3s;
+}
+.jupiter img {
+  height: 130px;
+  width: 90px;
+  animation-duration: 12s;
+}
+
+.saturn img {
   height: 105px;
   width: 80px;
-  padding-bottom: 200px;
+  animation-duration: 8s;
+}
+.uranus img {
+  height: 110px;
+  width: 85px;
+  animation-duration: 10s;
+}
+.neptune img {
+  height: 105px;
+  width: 80px;
+  animation-duration: 9s;
 }
 
 .sun {
@@ -76,38 +104,12 @@ body {
 .planet {
   object-fit: contain;
 }
-.text-mercury {
-  padding-top: 170px;
-}
-.text-venus {
-  padding-top: 50px;
-}
-.text-earth {
-  margin-top: 70px;
-}
-.text-mars {
-  margin-top: 230px;
-}
-.text-jupiter {
-  margin-top: 10px;
-}
-.text-saturn {
-  margin-top: 10px;
-}
-.text-uranus {
-  margin-top: 140px;
-}
-.text-neptune {
-  margin-top: 10px;
-}
 
 .floating {
   animation-name: floating;
-  animation-duration: 3s;
+
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
 }
 @keyframes floating {
   0% {
