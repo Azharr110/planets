@@ -13,50 +13,56 @@ body {
 }
 
 .My_planets {
-  margin-top: 18%;
+  margin-top: 7%;
+
   color: white;
   text-align: center;
   font-family: "Kanit", sans-serif;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   position: relative;
+
   margin-left: 100px;
 }
 
 .mercury {
-  height: 90px;
-  width: 70px;
+  height: 50px;
+  width: 35px;
 }
 .venus {
-  height: 110px;
-  width: 90px;
+  height: 70px;
+  width: 45px;
+  padding-bottom: 150px;
 }
 .earth {
-  height: 120px;
-  width: 90px;
+  height: 75px;
+  width: 55px;
 }
 .mars {
-  height: 90px;
-  width: 60px;
+  height: 50px;
+  width: 35px;
 }
 .jupiter {
-  height: 200px;
-  width: 150px;
+  height: 130px;
+  width: 90px;
+  padding-bottom: 9px;
 }
 
 .saturn {
-  height: 180px;
-  width: 140px;
+  height: 105px;
+  width: 80px;
+  padding-bottom: 300px;
 }
 .uranus {
-  height: 150px;
-  width: 120px;
+  height: 110px;
+  width: 85px;
 }
 .neptune {
-  height: 140px;
-  width: 115px;
+  height: 105px;
+  width: 80px;
+  padding-bottom: 200px;
 }
 
 .sun {
@@ -69,4 +75,28 @@ body {
 }
 .planet {
   object-fit: contain;
+}
+.text-mercury {
+  padding-top: 170px;
+}
+.text-venus {
+  padding-top: 50px;
+}
+.text-earth {
+  margin-top: 70px;
+}
+.text-mars {
+  margin-top: 230px;
+}
+.text-jupiter {
+  margin-top: 10px;
+}
+.text-saturn {
+  margin-top: 10px;
+}
+.text-uranus {
+  margin-top: 140px;
+}
+.text-neptune {
+  margin-top: 10px;
 }

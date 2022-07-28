@@ -14,30 +14,35 @@ function App() {
       title: "Mercury",
       image: mercury,
       divClass: " mercury",
+      divTextClass: "text-mercury",
     },
     {
       id: 4,
       title: "Venus",
       image: venus,
       divClass: "venus",
+      divTextClass: "text-venus",
     },
     {
       id: 1,
       title: "Earth",
       image: earth,
       divClass: "earth",
+      divTextClass: "text-earth",
     },
     {
       id: 2,
       title: "Mars",
       image: mars,
       divClass: "mars",
+      divTextClass: "text-mars",
     },
     {
       id: 3,
       title: "Jupiter",
       image: jupiter,
       divClass: "jupiter",
+      divTextClass: "text-jupiter",
     },
 
     {
@@ -45,6 +50,7 @@ function App() {
       title: "Saturn",
       image: saturn,
       divClass: "saturn",
+      divTextClass: "text-saturn",
     },
 
     {
@@ -52,12 +58,14 @@ function App() {
       title: "Uranus",
       image: uranus,
       divClass: "uranus",
+      divTextClass: "text-uranus",
     },
     {
       id: 7,
       title: "Neptune",
       image: neptune,
       divClass: "neptune",
+      divTextClass: "text-neptune",
     },
   ];
   return (
@@ -71,7 +79,7 @@ function App() {
         {planets.map((name) => (
           <div>
             {" "}
-            <h2> {name.title}</h2>
+            <h2 className={` ${name.divTextClass}`}> {name.title}</h2>
             <a>
               <img className={`planet ${name.divClass}`} src={name.image}></img>
             </a>
