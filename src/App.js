@@ -81,7 +81,10 @@ function App() {
             {" "}
             <h2 className={` ${name.divTextClass}`}> {name.title}</h2>
             <a>
-              <img className={`planet ${name.divClass}`} src={name.image}></img>
+              <img
+                className={`floating planet ${name.divClass}`}
+                src={name.image}
+              ></img>
             </a>
           </div>
         ))}
