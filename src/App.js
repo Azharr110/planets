@@ -72,15 +72,19 @@ function App() {
     <div className="body">
       <div>
         <a href="# ">
-          <img className={`planet sun `} src={sun}></img>
+          <img className={`planet sun `} src={sun} alt="My Awesome Image"></img>
         </a>
       </div>
       <div className="My_planets">
         {planets.map((name, id) => (
           <div className={`${name.divClass}`} key={id}>
             <h2> {name.title} </h2>
-            <a>
-              <img className={`floating planet `} src={name.image}></img>
+            <a href="#">
+              <img
+                className={`floating planet `}
+                src={name.image}
+                alt="My Awesome Image"
+              ></img>
             </a>
           </div>
         ))}
