@@ -72,7 +72,7 @@ function App() {
     <div className="body">
       <div>
         <a href="# ">
-          <img className={`planet sun `} src={sun} alt="My Awesome Image"></img>
+          <img className={`planet sun `} src={sun} alt="nice!"></img>
         </a>
       </div>
       <div className="My_planets">
@@ -83,7 +83,7 @@ function App() {
               <img
                 className={`floating planet `}
                 src={name.image}
-                alt="My Awesome Image"
+                alt="nice!"
               ></img>
             </a>
           </div>
