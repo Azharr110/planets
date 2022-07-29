@@ -79,7 +79,7 @@ function App() {
         {planets.map((name, id) => (
           <div className={`${name.divClass}`} key={id}>
             <h2> {name.title} </h2>
-            <a href="#">
+            <a href="!#">
               <img
                 className={`floating planet `}
                 src={name.image}
