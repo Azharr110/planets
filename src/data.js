@@ -8,7 +8,7 @@ import saturn from "./assets/images/icon-saturn.png";
 import uranus from "./assets/images/icon-uranus.png";
 import venus from "./assets/images/icon-venus.png";
 
-export const Data = [
+export const data = [
   {
     id: 6,
     title: "Mercury",
@@ -68,3 +68,5 @@ export const Data = [
     divTextClass: "text-neptune",
   },
 ];
+
+export default data;
