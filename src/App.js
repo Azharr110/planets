@@ -1,7 +1,6 @@
-import { Data } from "./data";
-import { Planet } from "./planet";
+import { Planet } from "./Planet";
+
 export function App() {
-  <Data />;
   return <Planet />;
 }
 export default App;
