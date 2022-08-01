@@ -1,10 +1,10 @@
 import React from "react";
-import { Data } from "./data";
+import { data } from "./data";
 import sun from "./assets/images/icon-sun.png";
 
-import { MyPlanet } from "./myplanet";
+import { MyPlanet } from "./MyPlanet";
 
-export function Planet({}) {
+export function Planet() {
   return (
     <div className="body">
       <div>
@@ -13,17 +13,8 @@ export function Planet({}) {
         </a>
       </div>
       <div className="My_planets">
-        {Data.map((name, id) => (
-          <div className={`${name.divClass}`} key={id}>
-            <h2> {name.title} </h2>
-            <a href="!#">
-              <img
-                className={`floating planet `}
-                src={name.image}
-                alt="nice!"
-              ></img>
-            </a>
-          </div>
+        {data.map((name) => (
+          <MyPlanet name={name} />
         ))}
       </div>{" "}
     </div>
@@ -31,11 +22,3 @@ export function Planet({}) {
 }
 
 export default Planet;
-
-/* <li className={type} onClick={onClick}>
-  <span className="icn_box_card">
-    <img src={image} alt="" />
-  </span>
-  <span className="new_card_text">{title}</span>
-  <span className="new_card_para">{subtitle}</span>
-</li>; */
