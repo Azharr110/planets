@@ -13,8 +13,14 @@ export function Planet() {
         </a>
       </div>
       <div className="My_planets">
-        {data.map((name) => (
-          <MyPlanet name={name} />
+        {data.map(({ title, onClick, id, image, divClass }) => (
+          <MyPlanet
+            title={title}
+            onClick={onClick}
+            key={id}
+            image={image}
+            divClass={divClass}
+          />
         ))}
       </div>{" "}
     </div>

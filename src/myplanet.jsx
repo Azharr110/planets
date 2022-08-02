@@ -1,13 +1,15 @@
 import React from "react";
 
-export function MyPlanet({ name }) {
+export function MyPlanet({ title, onClick, type, image, divClass }) {
   return (
-    <div className={`${name.divClass}`}>
-      <h2> {name.title} </h2>
-      <a href="!#">
-        <img className={`floating planet `} src={name.image} alt="nice!"></img>
-      </a>
-    </div>
+    <li className={type} onClick={onClick}>
+      <div className={divClass}>
+        <h2> {title} </h2>
+        <a href="!#">
+          <img className={`floating planet `} src={image} alt="nice!"></img>
+        </a>
+      </div>
+    </li>
   );
 }
 
