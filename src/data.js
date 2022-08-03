@@ -8,6 +8,14 @@ import saturn from "./assets/images/icon-saturn.png";
 import uranus from "./assets/images/icon-uranus.png";
 import venus from "./assets/images/icon-venus.png";
 import { MercuryModal } from "./mercuryModal";
+import { VenusModal } from "./VenusModal";
+import { EarthModal } from "./EarthModal";
+import { MarsModal } from "./MarsModal";
+import { JupiterModal } from "./JupiterModal";
+import { SaturnModal } from "./SaturnModal";
+import { UranusModal } from "./UranusModal";
+import { NeptuneModal } from "./NeptuneModal";
+
 //Named function
 // function abc () {}
 export const data = [
@@ -28,6 +36,7 @@ export const data = [
     image: venus,
     divClass: "venus",
     divTextClass: "text-venus",
+    url: { VenusModal },
   },
   {
     id: 1,
@@ -35,6 +44,7 @@ export const data = [
     image: earth,
     divClass: "earth",
     divTextClass: "text-earth",
+    url: { EarthModal },
   },
   {
     id: 2,
@@ -42,6 +52,7 @@ export const data = [
     image: mars,
     divClass: "mars",
     divTextClass: "text-mars",
+    url: { MarsModal },
   },
   {
     id: 3,
@@ -49,6 +60,7 @@ export const data = [
     image: jupiter,
     divClass: "jupiter",
     divTextClass: "text-jupiter",
+    url: { JupiterModal },
   },
 
   {
@@ -57,6 +69,7 @@ export const data = [
     image: saturn,
     divClass: "saturn",
     divTextClass: "text-saturn",
+    url: { SaturnModal },
   },
 
   {
@@ -65,6 +78,7 @@ export const data = [
     image: uranus,
     divClass: "uranus",
     divTextClass: "text-uranus",
+    url: { UranusModal },
   },
   {
     id: 7,
@@ -72,6 +86,7 @@ export const data = [
     image: neptune,
     divClass: "neptune",
     divTextClass: "text-neptune",
+    url: { NeptuneModal },
   },
 ];
 
