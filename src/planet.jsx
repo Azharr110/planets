@@ -10,9 +10,6 @@ export function Planet() {
   // Modal open state
   const [modal, setModal] = useState(false);
 
-  // Toggle for Modal
-  const toggle = () => setModal(!modal);
-
   return (
     <div className="body">
       <div>
@@ -21,11 +18,17 @@ export function Planet() {
         </a>
       </div>
 
+      <h1 style={{ color: "white" }}>
+        {modal === null ? "not selected" : modal}
+      </h1>
+
       <div className="My_planets">
-        {data.map(({ title, onClick, id, image, divClass }) => (
+        {data.map(({ title, onclick, id, image, divClass }) => (
           <MyPlanet
             title={title}
-            onClick={onClick}
+            modal={modal}
+            setModal={setModal}
+            onClick={onclick}
             key={id}
             image={image}
             divClass={divClass}

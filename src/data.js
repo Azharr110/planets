@@ -1,5 +1,6 @@
-import earth from "./assets/images/icon-earth.png";
+import React, { useState } from "react";
 
+import earth from "./assets/images/icon-earth.png";
 import jupiter from "./assets/images/icon-jupiter.png";
 import mars from "./assets/images/icon-mars.png";
 import mercury from "./assets/images/icon-mercury.png";
@@ -18,6 +19,12 @@ import { NeptuneModal } from "./NeptuneModal";
 
 //Named function
 // function abc () {}
+// // Modal open state
+// const [modal, setModal] = useState(false);
+
+// // Toggle for Modal
+// const toggle = () => setModal(!modal);
+
 export const data = [
   {
     id: 6,
@@ -28,7 +35,11 @@ export const data = [
     // fnFireOnClick: ()=> {
 
     // }
-    url: { MercuryModal },
+    onclick: () => {
+      console.log("azhar");
+    },
+
+    // url: { MercuryModal },
   },
   {
     id: 4,
@@ -36,7 +47,10 @@ export const data = [
     image: venus,
     divClass: "venus",
     divTextClass: "text-venus",
-    url: { VenusModal },
+    onClick: () => {
+      console.log("Azhaaaa  ");
+    },
+    // url: { VenusModal },
   },
   {
     id: 1,
