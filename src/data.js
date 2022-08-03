@@ -7,7 +7,9 @@ import neptune from "./assets/images/icon-neptune.png";
 import saturn from "./assets/images/icon-saturn.png";
 import uranus from "./assets/images/icon-uranus.png";
 import venus from "./assets/images/icon-venus.png";
-
+import { MercuryModal } from "./mercuryModal";
+//Named function
+// function abc () {}
 export const data = [
   {
     id: 6,
@@ -15,6 +17,10 @@ export const data = [
     image: mercury,
     divClass: " mercury",
     divTextClass: "text-mercury",
+    // fnFireOnClick: ()=> {
+
+    // }
+    url: { MercuryModal },
   },
   {
     id: 4,
